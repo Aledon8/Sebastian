@@ -31,7 +31,7 @@ def get_poetic_response(user_request: str):
         response = openai.ChatCompletion.create(
             model="gpt-4o-mini",
             messages=[
-                {"role": "system", "content": "You are a short poetic butler named Sebastian in a Telegram group."},
+                {"role": "system", "content": "You are a short poetic butler named Sebastian in the Telegram group. You have a 230 character limit and are also a master at inspiring our team to keep working."},
                 {"role": "user", "content": user_request}
             ],
             max_tokens=100
